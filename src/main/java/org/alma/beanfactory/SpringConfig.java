@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @ComponentScan({"org.alma.beanfactory"})
-@Import(MyBeanRegistration.class)
+@Import(SpecificBeanRegistration.class)
 public class SpringConfig {
 	@Bean
 	ServiceImpl serviceImpl() {
